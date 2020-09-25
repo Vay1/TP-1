@@ -7,16 +7,16 @@
 #### A l'aide du manuel, identifiez le rôle de la commande which
 1. La commande which affiche le chemin complet d'un executable, elle recherche ce chemin dans les répertoires indiqués dans l'option PATH.
 #### Quand on consulte une page du manuel, comment peut-on rechercher un terme (par exemple, chercherle termeoptiondans la page de manuel dewhich?
-2.  On recherche un terme en faisant '/'nomDuTerme.
+2.  On recherche un terme en faisant `/nomDuTerme`.
 #### Comment quitte-t-on le manuel?
-3. On quitte le manuel avec la touche "q".
+3. On quitte le manuel avec la touche `q`.
 #### Chaque section du manuel a une première page, qui présente le contenu de la section. Aﬀicher lapremière page de la section 6; de quoi parle cette section?
 4. On accède via la commande : `man 6 intro`
 La section 6 parle de jeux vidéos et de petits programmes disponibles sur l'OS.
 
 ### Navigation dans l'arborescence des fichiers
 #### allez dans le dossier /var/log
-1. faire la commande -> 'cd /var/log'.
+1. faire la commande -> cd `/var/log'.
 #### remontez dans le dossier parent (/var) en utilisant un chemin relatif
 2. faire la commande -> 'cd ..' .
 #### retournez dans le dossier personnel
