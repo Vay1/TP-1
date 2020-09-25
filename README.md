@@ -16,43 +16,43 @@ La section 6 parle de jeux vidéos et de petits programmes disponibles sur l'OS.
 
 ### Navigation dans l'arborescence des fichiers
 #### allez dans le dossier /var/log
-1. faire la commande -> cd `/var/log'.
+1. faire la commande -> cd `/var/log`.
 #### remontez dans le dossier parent (/var) en utilisant un chemin relatif
-2. faire la commande -> 'cd ..' .
+2. faire la commande -> `cd ..` .
 #### retournez dans le dossier personnel
-3. faire la commande -> 'cd /home/louis' .
+3. faire la commande -> `cd /home/louis` .
 #### revenez au dossier précédent (/var) sans utiliser de chemin
-4. faire la commande -> : 'cd -' .
+4. faire la commande -> : `cd -` .
 #### essayez d’accéder au dossier /root; que se passe-t-il?
 5. C'est impossible d'accéder au dossier /root car l'utilisateur n'a pas les droits nécessaires .
 #### essayez la commande sudo cd /root; que se passe-t-il? Expliquez
 6. La commande ne fonctionne pas car sudo fonctionne pour l’exécution des programmes et cd n'est pas un programme.
 #### à partir de votre dossier personnel, créez l’arborescence suivante :
 7. Liste des commandes :
- -> 'mkdir Dossier1'
- -> 'touch Dossier1 Fichier1'
- -> 'mkdir Dossier2'
- -> 'mkdir Dossier2/Dossier2.1'
- -> 'mkdir Dossier2/Dossier2.2'
- -> 'touch Dossier2/Dossier2.2/Fichier2'
- -> 'touch Dossier2/Dossier2.2/Fichier3'
+ -> `mkdir Dossier1`
+ -> `touch Dossier1 Fichier1`
+ -> `mkdir Dossier2`
+ -> `mkdir Dossier2/Dossier2.1`
+ -> `mkdir Dossier2/Dossier2.2`
+ -> `touch Dossier2/Dossier2.2/Fichier2`
+ -> `touch Dossier2/Dossier2.2/Fichier3`
  #### revenez dans votre dossier personnel; à l’aide de la commande rm, essayez de supprimer Fichier1, puis Dossier1; que se passe-t-il?
  8. On ne peut pas supprimer le fichier1 a l'aide de rm il va falloir utiliser l'option -r si on veut supprimer dossier1 et fichier1 .
  #### quelle commande permet de supprimer un dossier?
- 9. faire la commande -> 'rmdir Dossier1' .
+ 9. faire la commande -> `rmdir Dossier1` .
  #### que se passe-t-il quand on applique cette commande à Dossier2?
  10. On ne peut pas supprimer le dossier2 a l'aide de la commande rmdir car le dossier n'est pas vide .
  #### comment supprimer en une seule commande Dossier2 et son contenu?
- 11. Pour supprimer un dossier avec un contenu il faudra utiliser la commande 'rm -r' .
+ 11. Pour supprimer un dossier avec un contenu il faudra utiliser la commande `rm -r` .
 
 ### Commandes importantes
 #### Quelle commande permet d’aﬀicher l’heure? A quoi sert la commandetime?
-1. faire la commande ->  'date' .
+1. faire la commande ->  `date` .
 La commande time permet de chronométrer le temps d'exécution d'une tache.
 #### Dans votre dossier personnel, tapez successivement les commandes ls puis la; que peut-on en déduire sur les fichiers commençant par un point?
 2. Les fichiers avec un point sont des fichiers cachés.
 #### Où se situe le programme ls?
-3. On utilise la commande 'which ls' pour trouver l'emplacement, il se situe dans "usr/bin/ls".
+3. On utilise la commande `which ls` pour trouver l'emplacement, il se situe dans "usr/bin/ls".
 #### Essayez la commande ll. Existe-t-il une entrée de manuel pour cette commande? Utilisez les commandes alias ou alias pour en savoir plus sur la nature de cette commande.
 4. Non il n'y a pas d'entrée manuel pour "ll" .
 La commande "ll" est un alias pour "ls -alF".
@@ -60,11 +60,11 @@ La commande "ll" est un alias pour "ls -alF".
 - L'option "l" permet d'utiliser un format long pour l'affichage.
 - L'option "F" permet de formater la liste.
 #### Quelle commande permet d’aﬀicher les fichiers contenus dans le dossier /bin?
-5. faire la commande -> 'ls /bin'.
+5. faire la commande -> `ls /bin`.
 #### Que fait la commandels ..?
 6. La commande "ls .." permet d'afficher tous les fichiers présents dans le répertoire du dossier courant.
 #### Quelle commande donne le chemin complet du dossier courant?
-7. faire la commande -> 'pwd'.
+7. faire la commande -> `pwd`.
 #### Que fait la commande echo 'yo' > plop exécutée 2 fois?
 8. cette commande va créer un fichier plop ou il va écrire yo une fois car la deuxième fois sera réécri sur l'ancien yo.
 A chaque exécution le fichier est écrasé.
@@ -81,27 +81,27 @@ A chaque exécution le fichier est écrasé.
 A l'inverse en modifiant tutu cela n'a pas d'impacte sur titi. 
 Si on supprime le fichier titi, tutu va perdre tout son contenu.
 #### Aﬀichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran?
-14. faire la commande -> 'CTRL + S' pour stopper le défilement ou la touche 'arret defil' sur certain clavier.
-faire la commande ->  'CTRL + Q' pour reprendre le défilement.
+14. faire la commande -> `CTRL + S` pour stopper le défilement ou la touche 'arret defil' sur certain clavier.
+faire la commande ->  `CTRL + Q` pour reprendre le défilement.
 #### Aﬀichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20.
-15. faire la commande ->  'head -5 /var/log/syslog' pour afficher les 5 premières lignes.
-Pour les  15 dernières faire la commande ->  'tail -15 /var/log/syslog' .
+15. faire la commande ->  `head -5 /var/log/syslog` pour afficher les 5 premières lignes.
+Pour les  15 dernières faire la commande ->  `tail -15 /var/log/syslog` .
 #### Que fait la commande dmesg | less?
 16. La commande dmesg permet d'afficher le tampon de la machine. 
 La commande less permet de defiler lentement a chaque 'entrer'.
 #### Aﬀichez à l’écran le fichier /etc/passwd; que contient-il? Quelle commande permet d’aﬀicher la pagede manuel de ce fichier?
 17. Elle affiche la liste des utilisateurs ainsi que leur groupe et les fichiers dont ils sont propriétaires.
 #### Aﬀichez seulement la première colonne triée par ordre alphabétique inverse
-18. faire la commande -> 'cat /etc/passwd | cut -d: -f1 | sort -r'  (sort -r marche pas)
+18. faire la commande -> `cat /etc/passwd | cut -d: -f1 | sort -r` (sort -r marche pas)
 #### Quelle commande nous donne le nombre d’utilisateurs ayant un compte sur cette machine (pas seule-ment les utilisateurs connectés)?
-19. faire la commande -> 'wc -l /etc/passwd'.
+19. faire la commande -> `wc -l /etc/passwd`.
 #### Combien de pages de manuel comportent le mot-clé conversion dans leur description?
 20. 3 page du manuel comportent le mot-clé conversion.
-faire la commande -> ' man -k conversion | wc -l'
+faire la commande -> ` man -k conversion | wc -l`
 #### A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine
-21. faire la commande -> 'find / -name passwd'
+21. faire la commande -> `find / -name passwd`
 #### Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier ~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null
-22. La commande est : 'sudo find / -name passwd > ~/list_passwd_files.txt 2> /dev/null'
+22. La commande est : `sudo find / -name passwd > ~/list_passwd_files.txt 2> /dev/null`
 #### Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment
 23. 
 #### Utilisez la commande locate pour trouver le fichier history.log.
